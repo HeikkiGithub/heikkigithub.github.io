@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang=fi>
+
+<head>
+
+<title>Heikki Vesala: Tietoja minusta</title> <!-- Välilehden otsikko -->
+
+<meta charset="UTF-8">	<!-- metatietojen määritys: käytettävissä olevat symbolit (UTF-8), sivuston kuvaus, avainhakusanat selaimille, sivuston luojan tiedot ja viewport-asetukset eri laitteita varten  -->
+<meta name="description" content="Heikki Vesalan websivu">
+<meta name="keywords" content="Heikki Vesala,ICT,Xamk">
+<meta name="author" content="Veli Heikki Vesala">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="tyylit/tyylit.css">	<!-- Linkki tyylitiedostoon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	<!-- lataa hampurilaisikonin font awesome kirjastosta -->
+
+<script src="https://kit.fontawesome.com/43a8d6fe1f.js" crossorigin="anonymous"></script>	<!-- Font Awesome skripti -->
+
+<script>	<!-- skripti, jolla vaihdellaan 'responsive'-luokkaa lisäämällä ja poistamalla se käyttäjän klikattaessa hampurilais-ikonia -->
+function myFunction() {	
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+} 
+</script>
+
+</head>
+
+<body> 	<!-- Käyttäjälle näkyvä sisältö -->
+
+<nav class="topnav" id="myTopnav">
+	<a href="etusivu.html"><i class="fa-solid fa-house"></i>Etusivu</a>
+	<a href="portfolio_sivu.html"><i class="fa-solid fa-file-lines"></i>Portfolio</a>	
+	<a href="harrastukset_sivu.html"><i class="fa-solid fa-baseball-bat-ball"></i>Harrastukset</a>
+	<a href="about_me_sivu.html"><i class="fa-solid fa-user"></i>About me</a>
+	<a href="om_mig_sivu.html"><i class="fa-solid fa-user"></i>Om mig</a>	
+	<a href="#" class="split">Heikki Vesala: Tietoja minusta</a>
+	
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars" style="color: white;"></i></a>	<!-- kutsutaan hampurilaisikonia klikatessa myFunction() funktiota -->
+</nav>
+
+<header>
+	<h1 class="teksti_baskerville" id="otsikko">Tietoja minusta</h1>
+</header>
+
+<figure> <!-- Omakuva -->
+	<img id="omakuva" src="kuvat/omakuva.jpg" alt="Omakuva">
+</figure>
+
+<article> <!-- Sivustolla olevien ruutujen sisältö -->
+
+	<section class="sisalto_tietoja_minusta">
+		<h3>Kuka olen?</h3>
+		<ul style="margin-left: -1.5em;">
+			<li>Toisen vuoden kyberturva-alan insinööriopiskelija.</li>
+			<li>Opiskelupaikka Kotkassa: Kaakkois-Suomen ammattikorkeakoulu, <a href="https://www.xamk.fi/" target="_blank" title="Linkki Xamk:n etusivulle" style="color: black;">Xamk.</a></li>
+			<li>Aiempi työkokemus ja opinnot pääasiassa sosiaali- ja terveydenhuollon alalta.</li>
+			<li>Harrastuksina pasuunan soittaminen, äänittäminen ja thaiboxing.</li>
+		</ul>
+	</section>
+
+	<section class="sisalto_tietoja_minusta">
+		<h3>Miksi päädyin ICT-alalle?</h3>
+		<ul style="margin-left: -1.5em;">
+			<li>Innostuin katsottuani tietotekniikkaan ja hakkerointiin liittyneitä videoita internetistä.</li>
+			<li>Teknisellä alalla riittää haasteita ja pääsee käyttämään omaa luovuuttaan.</li>
+			<li>Haluan oppia ymmärtämään arjessa käyttämiämme teknisiä laitteita ja tietoverkkoja paremmin.</li>
+			<li>Toisten ihmisten ongelmien ratkaiseminen ja auttaminen tuo iloa itselle.</li>
+		</ul>
+	</section>
+
+	<section class="sisalto_tietoja_minusta">
+		<h3>Mitä annettavaa minulla on?</h3>
+		<ul style="margin-left: -1.5em;">
+			<li>Empaattinen ja rauhallinen työote, joka on tarpeen esimerkiksi asiakaspalvelussa.</li>
+			<li>Motivaatio oppia uusia asioita ja pitkäjänteinsyys opiskelussa.</li>
+			<li>Työkokemus sosiaali- ja terveysalalta: erilaisten ihmisten kohtaaminen.</li>
+			<li>Ahkeruus: olen aina ollut aktiivinen tekemään töitä myös opiskelun ohella.</li>
+			<li>Kielitaito: suomi, ruotsi ja englanti.</li>
+		</ul>
+	</section>
+
+	<hr class="palkki"><h2 style="text-align: center;">Aikajana: Koulutushistoria</h2>
+
+<section class="timeline">	<!-- Aikajana koulutushistoriasta -->
+  <div class="container left">
+    <div class="content">
+      <h2>2021-</h2>
+      <p>Xamk: Kyberturvallisuusinsinöörin opinnot</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2019-2021</h2>
+      <p>Tietojenkäsittelyn opintoja Ruotsissa yliopistolla</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2015-2018</h2>
+      <p>Suuhygienistin tutkinto</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2013-2015</h2>
+      <p>Lähihoitajan tutkinto</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2011</h2>
+      <p>Varusmiespalvelus</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2007-2010</h2>
+      <p>Kaksoistutkinto: Ylioppilastutkinto ja muusikon perustutkinto</p>
+    </div>
+  </div>
+</section> 
+
+</article>
+
+<footer class="footer"><i class="fa-solid fa-envelope"></i>dheve004@edu.xamk.fi</footer>	<!-- yhteystiedot footer-elementiin -->
+
+</body>
+
+</html>
+

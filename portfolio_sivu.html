@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang=fi>
+
+<head>
+
+<title>Heikki Vesala: Portfolio</title> <!-- Välilehden otsikko -->
+
+<meta charset="UTF-8"> <!-- Metatietojen määritys: käytettävissä olevat symbolit (UTF-8), sivuston kuvaus, avainhakusanat selaimille, sivuston luojan tiedot ja viewport-asetukset eri laitteita varten  -->
+<meta name="description" content="Heikki Vesalan websivu">
+<meta name="keywords" content="Heikki Vesala,ICT,Xamk">
+<meta name="author" content="Veli Heikki Vesala">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="tyylit/tyylit.css"> 	<!-- Linkki tyylitiedostoon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	<!-- Lataa hampurilaisikonin font awesome kirjastosta -->
+
+<script src="https://kit.fontawesome.com/43a8d6fe1f.js" crossorigin="anonymous"></script>	<!-- Font Awesome skripti -->
+
+<script>	<!-- skripti, jolla vaihdellaan 'responsive'-luokkaa lisäämällä ja poistamalla se käyttäjän klikattaessa hampurilais-ikonia -->
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+} 
+</script>
+
+</head>
+
+<body>	<!-- Käyttäjälle näkyvä sisältö -->
+
+<nav class="topnav" id="myTopnav">
+	<a href="etusivu.html"><i class="fa-solid fa-house"></i>Etusivu</a>
+	<a href="tietoja_minusta_sivu.html"><i class="fa-solid fa-user"></i>Tietoja minusta</a>	
+	<a href="harrastukset_sivu.html"><i class="fa-solid fa-baseball-bat-ball"></i>Harrastukset</a>
+	<a href="about_me_sivu.html"><i class="fa-solid fa-user"></i>About me</a>
+	<a href="om_mig_sivu.html"><i class="fa-solid fa-user"></i>Om mig</a>	
+	<a href="#" class="split">Heikki Vesala: Portfolio</a>	
+	
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars" style="color: white;"></i></a>
+</nav>
+
+<header> 
+	<h1 class="teksti_baskerville" id="otsikko">Portfolio</h1>
+</header>
+
+<h2 style="padding-left: 0.6em;">Koulutus Xamk:ssa</h2>
+<p class="sisalto_portfolio">Opiskelut Xamk:ssa vaihtelevat teoreettisten ja käytännönläheisempien kurssien välillä, eli osalla kursseista käydään luentotyyppisesti läpi teoriatietoa eri teknisistä aiheista ja välillä laitetaan niin sanotusti 'kädet saveen' ja kokeillaan itse soveltaa teoriatietoa käytäntöön, esimerkiksi erilaisissa laboraatioissa. 
+Alla on listattuna koulutuksessa suorittamiani kursseja ja mitä aihepiirejä niissä pääasiassa on opiskeltu.</p>
+
+
+
+<section class="kurssit_portfolio">	<!-- Suorittamieni kurssien sisältö -->
+	<h3>Teoreettiset kurssit:</h3>
+	<ul style="margin: 0 0 1.1em -2.5em;">
+		<li><i class="fa-solid fa-chalkboard-user"></i><b>Ammattienglanti:</b> työn hakeminen ja kyberturva-alaan liittyvä terminologia.</li> <!-- Tunneilla panostettiin suulliseen harjoitteluun keskeisinä teemoina kokoustaidot, työn hakeminen ja CV sekä kyberturva-alaan liittyvä terminologia.-->
+		<li><i class="fa-solid fa-database"></i><b>Datakeskusten perusteet:</b> riskienhallinta, jäähdytysjärjestelmät ja saatavuus.</li> <!-- Keskiössä riskienhallinta eritoten fyysisen turvallisuuden osalta, jäähdytysjärjestelmät ja saatavuus.-->
+		<li><i class="fa-solid fa-calculator"></i><b>Differentiaali- ja integraalilaskenta:</b> alkeisfunktiot, derivaatta, integraali ja raja-arvot.</li> <!--  alkeisfunktiot, derivaatta, integraali sekä raja-arvot ja jatkuvuus.-->
+		<li><i class="fa-solid fa-calculator"></i><b>Diskreettimatematiikka:</b> logiikka, joukko-oppi, relaatiot, funktiot ja kombinatoriikka.</li> <!--tietokoneiden aritmetiikka, logiikka, joukko-oppi, relaatiot ja funktiot, kombinatoriikka, Boolen algebra ja lukuteoria. -->
+		<li><i class="fa-solid fa-atom"></i><b>Fysiikka I:</b> mekaniikka, sähkövaraus ja -kenttä, magneettikenttä ja aalto-oppi.</li> <!-- mekaniikka, sähkövaraus ja -kenttä, tasavirtapiirit, magneettikenttä, sähkömagneettinen induktio, äänioppi sekä mekaaniset värähtelyt ja aallot.-->
+		<li><i class="fa-solid fa-shield-halved"></i><b>Kyberturvallisuuden perusteet:</b> strateginen kyberturvallisuus ja standardit.</li> <!--strateginen kyberturvallisuus, lainsäädäntö, standardit ja perustietoa hakkeroinnista. -->
+		<li><i class="fa-solid fa-file-shield"></i><b>Tietoturva:</b> salaus, kriittiset infrastruktuurit, kyberuhat ja tietoturvakontrollit.</li> <!-- yleistä teoriatietoa salauksesta, kriittisestä infrastruktuurista, kyberuhista, hyökkäystekniikoista, tietoturvakontrollista ja yrityksen toiminnan jatkuvuudesta. -->
+		<li><i class="fa-solid fa-language"></i><b>Venäjä I ja II:</b> A1-tason venäjänkielen opinnot.</li>
+		<li><i class="fa-solid fa-comment-dots"></i><b>Viestintätaidot:</b> ammatillinen viestintä, tutkiva kirjoittaminen ja puheviestintä.</li> <!-- -->
+	</ul>
+</section> 
+
+
+<section class="kurssit_portfolio" style="margin-bottom: 2em;">
+	<h3>Käytännön tekemistä painottavat kurssit:</h3>
+	<ul style="margin-left: -2.5em;">
+	    <li><i class="fa-solid fa-plug-circle-bolt"></i><b>Elektroniikka ja IoT:</b> Arduino-projekti, yksinkertaiset virtapiirit ja ohjelmoitava logiikka.</li> 
+		<li><i class="fa-brands fa-python"></i><b>Ohjelmoinnin perusteet:</b> Python-ohjelmointikieleen tutustuminen.</li>
+		<li><i class="fa-solid fa-shield-virus"></i><b>Kyberturvallisuus, aloitusprojekti:</b> salasanojen murtaminen ja MITM-hyökkäys.</li> 
+		<li><i class="fa-solid fa-computer"></i><b>Käyttöjärjestelmät:</b> Linux: Apache ja Samba, Android- ja Windows-järjestelmät.</li> 
+		<li><i class="fa-brands fa-redhat"></i><b>Linux käyttöjärjestelmän hallinta (RH124 ja RH134):</b> Linux Red Hat-distribuutio.</li> 
+		<li><i class="fa-solid fa-network-wired"></i><b>CCNA 1:</b> LAN- ja WLAN-verkot sekä kytkinten ja reitittimien peruskonfigurointi.</li> 
+		<li><i class="fa-solid fa-wifi"></i><b>CCNA 2:</b> Router-on-a-Stick, EtherChannel, DHCPv4, VLAN ja staattiset reititykset.</li> 
+		<li><i class="fa-solid fa-globe"></i><b>CCNA 3:</b> OSPFv2, ACL, NAT, VPN ja IPsec, QoS ja tietoverkkojen suunnittelu.</li> 
+		<li><i class="fa-solid fa-server"></i><b>Turvalliset web-palvelut:</b> HTML, Javascript, PHP, MySQL, SQL- ja XSS-injektiot.</li>
+	</ul>
+</section>
+
+<hr class="palkki">
+
+<h2 style="padding-left: 0.6em;">Kuvagalleria tekemistäni töistä</h2>
+
+<p class="sisalto_portfolio">Tähän mennessä olen vapaa-ajalla saanut kaksi hieman laajempaa teknistä projektia valmiiksi: komentorivillä toimivan, verkkoyhteyden vianmääritysohjelman Windows 10 PC:lle ja nämä websivut, jotka on tehty HTLM5-standardien mukaan ja validoitu. Sivuston tekemiseen sain oppia JAMK:n kesäkurssilta, jossa hyödynnettiin <a href="https://www.w3schools.com/" target="_blank" title="Linkki W3Schools:n websivulle" style="color: red;">W3Schools-sivuston</a> materiaalia. 
+Alla olevasta kuvagalleriasta, kuvia klikkaamalla, saa lisätietoa edellä mainitun vianmääritysohjelman lisäksi myös muutamasta koulussa yleisesti käytössä olevasta työkalusta, joiden avulla harjoittelemme kyberturvallisuuteen liittyviä taitoja.</p>
+
+<section class="kuvagalleria">
+	<a href="kuvat/topologia_CCNA.png" data-lightbox="tyonayte_kuvat" data-title="Looginen topologia: CCNA kursseilla olemme tehneet kuvan kaltaisiin topologioihin liittyneitä harjoituksia fyysisillä laitteilla koulumme ICTLAB-tilassa. Ennen varsinaisten harjoitusten suorittamista, käymme tyypillisesti läpi Ciscon verkkoakatemian materiaalista aiheeseen liittyvän teorian ja harjoitellaan Packet Tracer-ohjelmalla laitteiden konfigurointeja.">
+	<img src="kuvat/topologia_CCNA.png" alt="Looginen topologia" width="420" height="270"></a>
+	<a href="kuvat/ohjelma_menu.png" data-lightbox="tyonayte_kuvat" data-title="Verkkoyhteyden vianmääritysohjelma Windows 10 PC:lle: Ohjelmasta löytyy tarkempi kuvaus GitHub-sivustoltani, johon on linkki kuvagallerian alla. Ohjelman perusidea on auttaa paikantamaan PC:n verkkoyhteyden vikoja ja tarjota käyttäjälle korjausehdotuksia verkkoyhteyden palauttamiseksi.">
+	<img src="kuvat/ohjelma_menu.png" alt="Verkkoyhteyden vianmääritysohjelma Windows 10 PC:lle - menu-valikko" width="420" height="270"></a>
+	<a href="kuvat/ohjelma_toiminta.png" data-lightbox="tyonayte_kuvat" data-title="Verkkoyhteyden vianmääritysohjelma Windows 10 PC:lle: Ohjelman toimintaperiaate on yksinkertainen: aluksi käyttäjä pyrkii kuvaamaan yhteysongelmaansa annettujen vaihtoehtojen perusteella ja ohjelma yrittää tarjota rajauksen jälkeen ratkaisuvaihtoehtoja teknisesti vaivattomimmasta toimenpiteestä 'radikaalimpaan' ratkaisuvaihtoehtoon. Toimintaohjeet käyttäjälle ratkaisuiden kokeiluun on pyritty esittämään selkeästi 'askel askeleelta'-periaatteella kuvan tapaan. Ohjelman jatkokehityksenä voisi päivittää ohjelman koskemaan Windows 11-käyttöjärjestelmää ja luoda toimivan GUI:n.">
+	<img src="kuvat/ohjelma_toiminta.png" alt="Verkkoyhteyden vianmääritysohjelma Windows 10 PC:lle - toimintaperiaate" width="420" height="270"></a>
+	<a href="kuvat/ohjelma_python.png" data-lightbox="tyonayte_kuvat" data-title="Verkkoyhteyden vianmääritysohjelma Windows 10 PC:lle: Ohjelma on kirjoitettu python-kielellä. Ohjelman toimintalogiikka on suhteellisen yksinkertainen ja toimii muutaman funktion voimin. Lisäksi on pyritty ottamaan käyttäjän syöte huomioon ja sallimaan vain sopivat datatyypit.">
+	<img src="kuvat/ohjelma_python.png" alt="Verkkoyhteyden vianmääritysohjelma Windows 10 PC:lle lähdekoodi" width="420" height="270"></a>
+	<a href="kuvat/ohjelma_dns.png" data-lightbox="tyonayte_kuvat" data-title="Verkkoyhteyden vianmääritysohjelma Windows 10 PC:lle: Jos käyttäjällä riittää kiinnostusta, ohjelma tarjoaa yleistietoa verkkoprotokollista ja tietoturvasta mahdollisimman havainnollisesti. Yksi tärkeä motivaatio ohjelman tekoon oli jäsentää itselleni yleisten verkkoprotokollien toimintaa ja harjoitella ohjelmointia.">
+	<img src="kuvat/ohjelma_dns.png" alt="Verkkoyhteyden vianmääritysohjelma Windows 10 PC:lle - DNS" width="420" height="270"></a>
+	<a href="kuvat/pentestaus.png" data-lightbox="tyonayte_kuvat" data-title="Penetraatiotestaus ja hakkerointi: Koulussa yleisiä hyökkäystekniikoita harjoitellaan käytännössä virtuaalisessa CyberLab-ympäristössä tai internetissä olevilla, tarkoituksellisesti haavoituvaiseksi luoduilla sivustoilla. Kuvassa esimerkkinä Web Security Academy-sivuston laboraatiossa blind SQL-injektion harjoittelua BurpSuite-ohjelmistoa hyödyntäen.">
+	<img src="kuvat/pentestaus.png" alt="BurpSuite" width="420" height="270"></a>
+</section>
+
+<section class="linkit_portfolio">	<!-- linkit projekteihin -->
+	<ul>
+		<li><i class="fa-solid fa-link"></i><a href="https://github.com/HeikkiGithub/Troubleshooting-Win10-network" target="_blank" title="GitHub-repo: Verkkoyhteyden vianmääritysohjelma Windows 10 PC:lle">GitHub-repo: Verkkoyhteyden vianmääritysohjelma Windows 10 PC:lle</a></li>
+	</ul>
+</section>
+
+<footer class="footer"><i class="fa-solid fa-envelope" style="color: white; padding-right:0.5em;"></i>dheve004@edu.xamk.fi</footer> <!-- Yhteystiedot footer-elementiin -->
+
+
+<link href="css/lightbox.css" rel="stylesheet" />
+<script src="js/lightbox-plus-jquery.js"> </script>
+</body>
+</html>
