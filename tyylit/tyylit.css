@@ -417,6 +417,16 @@ hr.palkki {	/* palkin asettaminen vasemmalle blokki-elementtien jälkeen sekä l
 
 @media screen and (max-width: 600px) {	
 
+	.etusivu_teksti {	
+		text-align: center;
+		position: absolute;
+		top: 45%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: white;
+		text-shadow: 0.1em 0.1em blue;
+	}
+	
 	#omakuva {
 		max-width: 15em;
 		max-height: 25em;
