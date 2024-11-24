@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html lang=en>
+
+<head>
+
+<title>Heikki Vesala: Om mig</title>
+
+<meta charset="UTF-8">	<!-- Metatietojen määritys: käytettävissä olevat symbolit (UTF-8), sivuston kuvaus, avainhakusanat selaimille, sivuston luojan tiedot ja viewport-asetukset eri laitteita varten  -->
+<meta name="description" content="Heikki Vesala webpage">
+<meta name="keywords" content="Heikki Vesala, ICT, Jamk, Information and Communications Technology">
+<meta name="author" content="Veli Heikki Vesala">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="tyylit/tyylit.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	<!-- lataa hampurilaisikonin font awesome kirjastosta -->
+
+<script src="https://kit.fontawesome.com/43a8d6fe1f.js" crossorigin="anonymous"></script>	<!-- Font Awesome skripti -->
+
+<script>	<!-- skripti, jolla vaihdellaan 'responsive'-luokkaa lisäämällä ja poistamalla se käyttäjän klikattaessa hampurilais-ikonia -->
+function myFunction() {	
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+} 
+</script>
+
+</head>
+
+<body>	<!-- Käyttäjälle näkyvä sisältö -->
+	
+<nav class="topnav" id="myTopnav" style="background-color: #2A9D8F;">
+	<a href="index.html"><i class="fa-solid fa-house"></i>Huvudsidan</a>
+	<a href="tietoja_minusta_sivu.html"><i class="fa-solid fa-language"></i>Suomeksi</a>
+	<a href="about_me_sivu.html"><i class="fa-solid fa-language"></i>In English</a>	
+	<a href="#" class="split">Heikki Vesala: ingenjörsstudent</a>
+	
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars" style="color: white;"></i></a>	<!-- kutsutaan hampurilaisikonia klikatessa myFunction() funktiota -->
+</nav>
+
+<header>
+	<h1 class="teksti_baskerville" id="otsikko" style="background-color: #264653;">Om mig</h1> <!-- Aiemmin: #264653 -->
+</header>
+
+<div class="keskitys">
+	<figure> <!-- Omakuva -->
+		<img id="omakuva" src="kuvat/omakuva.jpg" alt="En bild av mig" style="box-shadow: 0 0 0.5em 0.5em rgba(210, 105, 30, 0.5);">
+	</figure>
+	
+	<section class="sisalto_tietoja_minusta" style="background-color: #2A9D8F;">  <!-- Aiemmin: #2A9D8F -->
+		<h3>Vem är jag egentligen?</h3>
+		<ul>
+			<li>En ingenjörsstudent som pluggar tredje året.</li>
+			<li>Jag studerar vid yrkeshögskolan <a href="https://www.jamk.fi/fi" target="_blank" title="Länk till huvudsidan av Jamk" style="color: yellow;">Jamk</a>.</li>
+			<li>Arbetserfarenhet inom IT: Telia Cygate ITOC och Stora Enso GSDN.</li>
+			<li>Jag har också jobbat mycket inom social- och hälsovårdssektorn förut.</li>
+			<li>På min fritid brukar jag lira trombon och öva thaiboxning.</li>
+		</ul>
+	</section>
+
+	<section class="sisalto_tietoja_minusta" style="background-color: #2A9D8F;">
+		<h3>Varför valde jag IT branschen?</h3>
+		<ul>
+			<li>Jag sökte till IT utbildningen när jag såg några intressanta videor om hackning och nätverksteknik på internet.</li>
+			<li>Man kan utmana sig inom ICT branschen oändligt många olika sätt och lära sig alltid nya grejer.</li>
+			<li>Jag vill förstå hur nätverk vi använder dagligen verkligen fungerar.</li>
+			<li>Man kan lära sig saker och ting som är också nyttiga utanför jobbet.</li>
+		</ul>
+	</section>
+
+	<section class="sisalto_tietoja_minusta" style="background-color: #2A9D8F;">
+		<h3>Vad har jag att erbjuda till arbetsgivare?</h3>
+		<ul>
+			<li>Jag arbetar empatisk och lugnt sätt vilket är bra till exempel kring kunder.</li>
+			<li>Jag är väldigt motiverad att lära mig nya saker och färdigheter.</li>
+			<li>Jag är van vid att kommunicera i olika typer av sociala situationer, tack vare mina arbetsenfarenheter.</li>
+			<li>Språkkunskaper: finska, svenska och engelska.</li>
+		</ul>
+	</section>
+</div>	
+
+<hr class="palkki" style="border: 1.6em solid #264653;">
+	
+<h1 style="text-align: center;">Utbildningsbakgrund </h1>
+
+<section class="timeline">	<!-- Aikajana koulutushistoriasta -->
+<div class="container left">
+    <div class="content" style="background-color: #2A9D8F;">
+      <h2>Från och med 2023</h2>
+      <p>Jamk: Ingenjör i informations- och kommunikationsteknik</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content" style="background-color: #2A9D8F;">
+      <h2>2021-2023</h2>
+      <p>Xamk: Cybersäkerhet ingenjörs studier</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content" style="background-color: #2A9D8F;">
+      <h2>2019-2021</h2>
+      <p>Datavetenskap studier i Sverige</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content" style="background-color: #2A9D8F;">
+      <h2>Fram till och med 2015</h2>
+      <p>Tandhygienistexamen med mera</p>
+	  <p>Dubbelexamen: Studentexamen och Grundexamen i musik</p>
+    </div>
+  </div>
+</section> 
+	
+<h1 class="teksti_baskerville" id="otsikko" style="background-color: #264653;">Portfolio</h1>
+
+
+<h2 style="padding-left: 0.6em; text-align: center;">2024: Telia Cygate - IT Operations Center</h2>
+
+<div class="keskitys">
+	<section class="sisalto_harrastukset" style="background-color: #2A9D8F;">
+		<h2>Arbetsbeskrivning</h2>
+		<p>Verksamhet i ITOC baserade på ITILv3 samlingen, med fokus på incidenthantering. Andra viktiga processer var problemhantering, förändringshantering och hantering av tjänsteförfrågningar.
+		Jag arbetade som Junior ICT specialist i både kundtjänst- och expertroller, där jag betjänade kunder inom nätverk, servrar och säkerhet. Mina arbetsuppgifter omfattade stöd för informationssystem och telekommunikation 
+		samt fjärrhantering, konfigurering och övervakning av nätverksenheter. Jag deltog i felsökningssituationer för Telia Cygate och kundmiljöer, med målet att lösa problem i samarbete med kundernas experter.</p>
+	</section>
+
+	<section class="sisalto_harrastukset" style="background-color: #2A9D8F;">
+		<h2>Vad lärde jag?</h2>
+		<p>Arbetet på ITOS var månsidig ty Telia Cygate har många kunder. Kommunikation skedde främst per telefon, via e-post eller ärendehanteringssystem, både på finska och engelska. Jag fick möjlighet att bekanta mig med olika företags nätverksmiljöer, till exempel genom nätverksdiagram och kundspecifik dokumentation. Kunderna använde en mängd olika tjänster, men jag arbetade mest med LAN-, WLAN-, brandväggs- och servertjänster. 
+		Genom detta arbete fick jag en bättre förståelse för SNMP- och ping-baserad övervakning, eftersom kundernas anläggningar hade SmartWatcher-servrar som övervakade enheter med hjälp av SNMP-polling.
+		Jag blev bekant med användningen av övervakningskonsoler, som användes för att övervaka exempelvis portar, prestanda, nätverkstrafikens latens, CPU, minne, diskutrymme och enheternas allmänna tillstånd. Kundernas och Telia Cygates miljöer innehöll enheter från olika tillverkare, vilket gav mig möjlighet att konfigurera olika typer av nätverksenheter både via kommandorad och GUI-gränssnitt.
+		Med incidenthantering som kärnuppgift ägnade jag mycket av min dagliga arbetsdag åt felsökning. Jag fokuserade främst på problem i datalänkskiktet, där jag till exempel undersökte orsaker till fel på switchar och basstasioner. Genom felsökning lärde jag mig att bättre läsa enhetsloggar, analysera data från övervakningsverktyg och effektivare söka efter information.
+		Jag fick också erfarenhet av enhetsinstallationer, som utfördes per telefon tillsammans med tekniker. De vanligaste uppgifterna var att byta ut enheter vid fel eller att installera och konfigurera nya enheter.</p>
+	</section>
+
+	<section class="sisalto_harrastukset" style="background-color: #2A9D8F;">
+		<h2>Analys</h2>
+		<p>Rollen som Junior ICT-specialist på ITOC var mitt första nätverksorienterade jobb, där jag fick värdefull erfarenhet eftersom ITOC fungerade som en kontaktpunkt för många andra enheter. I ITOC fick jag en förståelse för andra nätverksrelaterade områden. 
+		Arbetet lärde mig särskilt att arbeta självständigt, eftersom det krävdes att lära sig nya saker varje dag på grund av det stora antalet teknologier som användes, och kanske viktigast av allt, modet att ta itu med obekanta problem.
+		Starka kundtjänstfärdigheter, en avslappnad attityd, sinne för humor och uthållighet var också till stor hjälp längs vägen. I framtiden skulle det vara intressant att fördjupa min expertis inom edgenätverk, datacenter nätverk eller stomnätverk, samt trådlösa teknologier.</p>
+	</section>
+</div>
+
+<hr class="palkki" style="border: 1.6em solid #264653;">
+
+<h2 style="padding-left: 0.6em; text-align: center;">2023: Stora Enso - Global Service Desk Nordic</h2>
+
+<div class="keskitys">
+	<section class="sisalto_harrastukset" style="background-color: #2A9D8F;">
+		<h2>Arbetsbeskrivning</h2>
+		<p>Jag jobbade som Service Desk Agent och mitt jobb var att lösa tekniska problem av anställda hos Stora Enso. Användare antingen ringde upp eller kontaktade per e-post vilket betydde att jag måste byta mellan finska och svenska vid behov.
+		Deras problem huvudsakligen gällde Stora Ensos interna tjänster, inloggning, licenser, hårdvara eller nätverk trubbel, VPN eller olika mjukvaror.
+		Dessa typer av problem var inte lätt att lösa vid varje tillfälle under telefonsamtal så jag använde dagligen olika fjärranslutningsprogram. Dessutom måste jag hantera användares kontouppgifter eller annan data så jag sysslade regelbundet med olika system så som Active Directory.</p>
+	</section>
+
+	<section class="sisalto_harrastukset" style="background-color: #2A9D8F;">
+		<h2>Vad lärde jag?</h2>
+		<p>Telefonsamtalen kom slumpmässig antingen från Finland eller Sverige varför jag var tvungen att byta språket flera gånger om dagen. Förutom detta hade vi möten på engelska eftersom vi samarbetare mycket med en annan Global Service Desk enhet.
+		På det här sättet fick jag öva mycket på mina språkkunskaper. Jag lärde mig massor av grundläggande felsökningsmetoder och verktyg i Windows, övade analysera olika problem och lärde mig nya trick. 
+		Ibland under felsökning behövdes också stresstålighet och samarbetsförmåga, särskilt vid akuta händelser. Om jag stötte på ett okänt problem eller uppfattade inte vad användren menade så tog jag vanligtvis fjärranslutning till deras enhet och bett dem förklara vidare saken.
+		Detta brukade förenkla det aktuella problemet och jag fick också hjälp vid behov av mina kollegor eller andra specialister via chat.
+		Jag uppnådde mina ändamål, alltså jag lärde mig att tjäna kunder bättre på svenska, såg vad det innebär att jobba i en Service Desk, förbättrade mitt självförtroende och blev mer skicklig med olika verktyg, tjänster och system som jag inte hade använt förut.</p>
+	</section>
+
+	<section class="sisalto_harrastukset" style="background-color: #2A9D8F;">
+		<h2>Analys</h2>
+		<p>Jobbet i Global Service Desk Nordic gav mig försmak om IT branschen och också lite uppfattning om dess väldig omfattning. Mitt intresse av administrativa angelägenheter ökade under jobbet och det vore kul att kunna arbeta framöver mer till exempel med Linux, servrar och nätverksutrustningar.
+		En av mina ändamål i framtiden är att förstå bättre molntjänster och artificiell intelligens ty dessa viktiga teknologier påverkar vårt samhälle och vardag betydande och troligtvis överraskande sätt.
+		Jag tror framför allt att på modern arbetsplats entreprenörskap, nyfikenhet att lära sig nya saker och bra sociala kompetenser är väsentliga tillsammans med tekniska kunskaper. Det är generellt lättare att lära sig det sistnämnda tycker jag.</p>
+	</section>
+</div>
+
+
+<hr class="palkki" style="border: 1.6em solid #264653;">
+
+
+<h2 style="padding-left: 0.6em; text-align: center;">Yrkeshögskolestudier i Jamk hittills</h2>
+
+<p class="sisalto_portfolio">Utbildningen är delad i obligatoriska och avancerade studier. I obligatoriska studier fokuseras på grundläggande färdigheter som en ingenjör borde kunna så som matematik, fysik, språk, kommunikations- och informationsteknik och mjukvaruutveckling.      
+	I avancerade studier däremot fördjupas kunskaper i frivalda ämnen och man får möjlighet att lösa självstädigt olika uppgifter genom att utnyttja teoretiska vetskapen. Nedan är listad kurser som jag har genomfört hittills.</p>
+
+
+<div class="keskitys">
+	<section class="kurssit_portfolio" style="background-color: #2A9D8F;">	<!-- Suorittamieni kurssien sisältö -->
+		<h3>Obligatoriska kurser</h3>
+		<ul style="margin: 0 0 1.1em -2.5em;">
+			<li><i class="fa-solid fa-chalkboard-user"></i><b>Språkkunskaper:</b> Engelska, Svenska och Kommunikationsfärdigheter.</li>
+			<li><i class="fa-solid fa-business-time"></i><b>Future Factory:</b> Företagande, JAMK InnoFlash och Future Factory Projekt.</li>
+			<li><i class="fa-solid fa-calculator"></i><b>Matematik:</b> Ekvationer, Funktioner, Derivering och integration och Diskret matematik.</li>
+			<li><i class="fa-solid fa-square-root-variable"></i><b>Tillämpad matematik:</b> Optimering och nätverksmodeller.</li>
+			<li><i class="fa-solid fa-atom"></i><b>Fysik:</b> Krafter och rörelse, Energi, Elektromagnetism och Laborationer.</li>
+			<li><i class="fa-solid fa-microchip"></i><b>Informationsteknologi:</b> Dataanalys och artificiell intelligens och Skriptspråk.</li>
+			<li><i class="fa-solid fa-laptop-code"></i><b>Mjukvaruutveckling: </b> Webbteknologier, Databaser och Full stack programmering.</li>
+		</ul>
+	</section> 
+
+
+	<section class="kurssit_portfolio" style="background-color: #2A9D8F;">
+		<h3>Avancerade studier</h3>
+		<ul style="margin-left: -2.5em;">
+			<li><i class="fa-solid fa-network-wired"></i><b>Datanätverk:</b> LAN, DCN, Edgenätverk, Stomnätverk och Automatisering nätverk.</li>
+			<li><i class="fa-solid fa-computer"></i><b>CCNA kurser:</b> CCNA 1-3.</li>
+			<li><i class="fa-solid fa-server"></i><b>Datacenter och molntjänster:</b> Skalbarhet och tillgänglighet.</li> 
+			<li><i class="fa-brands fa-linux"></i><b>Linux OS:</b> Linux systemadministration (RH124) och Operativsystem.</li>
+			<li><i class="fa-brands fa-windows"></i><b>Windows OS:</b> Windows domän administration och Windows infrastruktur administration.</li>
+			<li><i class="fa-solid fa-server"></i><b>Serverunderhåll:</b> Tjänsteplattformar och Tjänstehantering och övervakning.</li>
+			<li><i class="fa-solid fa-shield-virus"></i><b>Cybersäkerhet:</b> CCNA CyberOps och Säkerhetsutrustning.</li>
+		</ul>
+	</section>
+</div>
+
+
+<hr class="palkki" style="border: 1.6em solid #264653;">
+
+<h2 style="padding-left: 0.6em; text-align: center;">Fotogalleri av skol- och sidoprojekt</h2>
+
+<p class="sisalto_portfolio">Förutom dessa websidor vilka jag har gjort enligt HTML5 standarder och med hjälp av <a href="https://www.w3schools.com/" target="_blank" title="Länk till W3Schools websidan" style="color: red;">W3Schools webbsidan</a>, har jag programmerat full stack spel Hänga Gubbe och ett program för felsökning nätverk för Windows 10 PC. I den här delen har jag samlat några bilder av
+	programmen och skolprojekt för att visa vad vi huvudsakligen sysslar med på utbildningen. Klicka på bilderna för att få mer information.</p>
+
+<section class="kuvagalleria">
+	<a href="kuvat/ohjelma_menu.png" data-lightbox="tyonayte_kuvat" data-title="Programmet för felsökning nätverk för Windows 10 PC: Mer information om programmet kan hittas på mina GitHub sidor (kolla länken under fotogalleriet). Den grundläggande idèn av programmet är att identifiera orsak till anslutningsproblem och lösa dem genom att ge användaren enkla steg för steg instruktioner.">
+	<img src="kuvat/ohjelma_menu.png" alt="Verkkoyhteyden vianmääritysohjelma Windows 10 PC:lle - menu-valikko" width="400" height="250"></a>
+	<a href="kuvat/topologia_CCNA.png" data-lightbox="tyonayte_kuvat" data-title="Datanätverk: På CCNA- och datanätverkskurserna har vi utfört uppgifter med fysisk utrustning och i simuleringsmiljöer för att skapa fungerande nätverk.">
+	<img src="kuvat/topologia_CCNA.png" alt="Looginen topologia" width="400" height="250"></a>
+	<a href="kuvat/juustomarket.png" data-lightbox="tyonayte_kuvat" data-title="Cybersäkerhet: På kursen Säkerhetsutrustning skapade vi ett lokalt nätverk för ett påhittat företag kallades Juustomarket, konfigurerade site-to-site VPN anslutning till dess filialkontor och samtidigt inriktade vi till konfigurering av OPNsense brandväggen och begränsning av DoS attacker.">
+	<img src="kuvat/juustomarket.png" alt="Tietoverkkolaitteet kurssi" width="400" height="250"></a>
+	<a href="kuvat/linux.png" data-lightbox="tyonayte_kuvat" data-title="Linux kunskaper: Under etiska hackningsövningar har vi huvudsakligen använt Kali Linux och RedHat på administrativa uppgifter. I vissa övningar vi har försökt för exempel bygga upp DNSSEC-kryptering mellan FreeBSD och CentOS servrar och undersöka Apache webbserver.">
+	<img src="kuvat/linux.png" alt="Linux hallinta" width="400" height="250"></a>
+	<a href="kuvat/active directory.png" data-lightbox="tyonayte_kuvat" data-title="Windows kunskaper: På kursen Operativsystem hittade vi på ett eget företag för att öva användning av Active Directory: skapa skript och GPOs, kolla diskhantering, installera DNS-, DHCP- och RODC tjänsteroller och ansluta enheter till företagets domän.">
+	<img src="kuvat/active directory.png" alt="Windows käyttöjärjestelmä" width="400" height="250"></a>
+	<a href="kuvat/pentestaus.png" data-lightbox="tyonayte_kuvat" data-title="Etisk hackning: På skolan använder vi ett virtuellt labb eller olika sårbara webbsidor för att öva hackningstekniker. På bilden syns webbsidan av Web Security Academy och ett scenario där jag har utnyttjat blind SQL-injektion och BurpSuite programmet för att genomföra  ett labb.">
+	<img src="kuvat/pentestaus.png" alt="BurpSuite" width="400" height="250"></a>
+	<a href="kuvat/hirsipuu.png" data-lightbox="tyonayte_kuvat" data-title="Full Stack programmering: På kursen fokuserade vi på JavaScript, och som sista övning programmerade jag spelet Hänga Gubbe. Länken till spelet och GitHub-repot finns nedanför fotogalleriet.">
+	<img src="kuvat/hirsipuu.png" alt="Hänga Gubbe" width="400" height="250"></a>
+	<a href="kuvat/ansible.png" data-lightbox="tyonayte_kuvat" data-title="Automatisering nätverk: På kursen använde vi Ansible och Jinja2-mallar för att underhålla nätverket. Vi skapade till exempel playbooks som tog säkerhetskopior av enheter, skickade nya konfigurationer och testade att de fungerade.">
+	<img src="kuvat/ansible.png" alt="Ansible" width="400" height="250"></a>
+</section>
+
+
+<section class="linkit_portfolio" style="background-color: #2A9D8F;">	<!-- linkit projekteihin -->
+	<ul>
+		<li><i class="fa-solid fa-link" style="color: yellow;"></i><a href="https://student.labranet.jamk.fi/~AE9377/hangman_client_side/" target="_blank" title="Hänga Gubbe">Hänga Gubbe spelet (full stack)</a></li>
+		<li><i class="fa-solid fa-link" style="color: yellow;"></i><a href="https://github.com/HeikkiGithub/hangman" target="_blank" title="GitHub-repo: Hänga Gubbe">GitHub-repo: Hänga Gubbe dokumentation</a></li>
+		<li><i class="fa-solid fa-link" style="color: yellow;"></i><a href="https://github.com/HeikkiGithub/Troubleshooting-Win10-network" target="_blank" title="GitHub-repo: Programmet för felsökning nätverk för Windows 10 PC">GitHub-repo: Programmet för felsökning nätverk för Windows 10 PC</a></li>
+	</ul>
+</section>
+
+<h1 class="teksti_baskerville" id="otsikko" style="background-color: #264653;">Mina hobbyer</h1>
+
+<div class="keskitys">
+	<section class="sisalto_harrastukset" style="background-color: #2A9D8F;">
+		<h2>Inspelning</h2>
+		<p>Trombonen är inte den populeraste instrumenten i världen när det gäller mängden av inspelningar. Jämfört med piano till exempel är trombon repertoar ganska småskalig. Hur som helst detta har bara ökat min iver att spela in musik för trombon.
+		Det är väldigt roligt att göra egna kompositioner eller arrangemang. Färdiga inspelningar är också kul att använda i andra projekt. För det mesta har jag gjort arrangemang för trombon trio och trombon kvartett. Jag använder tämligen grundläggande utrustning i mina
+		inspelningar: en programvara kallad Audacity, AKG D40 dynamisk instrument mikrofon, JBL Tune750BT hörlurar och Focusrite Scarlett ljudkort.
+		Från mp3-filen nedan kan man lyssna en låt för trombon sextet: den första satsen av Palestrinas mässan Missa Papae Marcelli:</p>
+		
+		<a href="Missa Papae Marcelli - Kyrie_Trb Sextet.mp3" target="_blank" title="Kappale: Missa Papae Marcelli - Kyrie">G. P. da Palestrina: Missa Papae Marcelli - Kyrie</a>
+	</section>
+
+	<section class="sisalto_harrastukset" style="background-color: #2A9D8F;">
+		<h2>Trombon</h2>
+		<p>Att spela musik är en av det bästa sakerna jag vet. Det är ju roligt att spela tillsammans, särskilt i sinfoniorkester, i trombon kvartett eller i jazzband så som i en big band.
+		Huvudsakligen spelar jag klassisk musik för att jag har fått klassisk utbildning i konservatoriet men hade jag bara tid skulle jag vilja lära mig jazz eller funk också. Som så många andra trombonister så lirar jag främst tenor trombon och emellanåt bass
+		trombon i big band och alto trombon i sinfoniorkester.</p>
+	</section>
+
+	<section class="sisalto_harrastukset" style="background-color: #2A9D8F;">
+		<h2>Thaiboxning</h2>
+		<p>Thaiboxning, som är också känt under namnet Muay Thai eller 'the art of eight limbs', är en enormt viktig hobby för mig eftersom den hjälper mig tillfälligt att glömma bort mina andra vardagliga sysslor och håller mig i form. Thaiboxning är mångsidig sport där man utnyttjar olika tekniker så som: boxning (nästan likadant som västerländska boxare),
+		olika typer av sparkar (hög, låg, roundhouse och så vidare), knä, armbågar, clinching och sweeps. Jag rekommenderar att prova sporten om man vill förbättra ens balans, hälsan, muskler eller bara ha roligt helt enkelt.</p>
+	</section>
+</div>
+
+
+<section class="kuvagalleria2">
+	<a href="kuvat/thaiboxing.jpg" data-lightbox="harrastus_kuvat" data-title="Säckträning är ju roligt.">
+	<img src="kuvat/thaiboxing.jpg" alt="Säckträning" width="400" height="250"></a>
+	<a href="kuvat/taide.jpg" data-lightbox="harrastus_kuvat" data-title="Jag undrar vad jag ska hitta på med det här idag...">
+	<img src="kuvat/taide.jpg" alt="Trombon" width="400" height="250"></a>
+	<a href="kuvat/konserttisali.jpg" data-lightbox="harrastus_kuvat" data-title="Att spela i en orkester är roligt ty man få åka utomlands ibland.">
+	<img src="kuvat/konserttisali.jpg" alt="Konsertsal" width="400" height="250"></a>
+</section>
+
+
+<footer class="footer" style="background-color: #264653;">
+	<ul>
+		<li><i class="fa-solid fa-envelope"></i>  AE9377@student.jamk.fi</li>
+		<li><i class="fa-brands fa-github" ></i>  HeikkiGithub</li>
+		<li><i class="fa-brands fa-linkedin"></i>  https://www.linkedin.com/in/heikki-vesala</li>
+	</ul>
+</footer>	
+
+<link href="css/lightbox.css" rel="stylesheet" />
+<script src="js/lightbox-plus-jquery.js"> </script>
+
+</body>
+
+</html>
