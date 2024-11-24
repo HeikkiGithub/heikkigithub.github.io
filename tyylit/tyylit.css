@@ -473,4 +473,9 @@ hr.palkki {	/* palkin asettaminen vasemmalle blokki-elementtien jälkeen sekä l
 	.kuvagalleria {
 		margin: 0 0 0 0.5em;
 	}
+
+	.kuvagalleria2 {	/* kuvagallerian asetukset 'ylivuodon' varalle, jolloin sisältö piilotetaan ja marginaalit */
+		margin: 0 0 0 0.5em;
+		overflow: hidden;
+	}
 }	
