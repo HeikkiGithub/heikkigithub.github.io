@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang=fi>
+
+<head>
+
+<title>Heikki Vesala: Insinööriopiskelija</title> <!-- Välilehden otsikko -->
+
+<meta charset="UTF-8">	<!-- metatietojen määritys: käytettävissä olevat symbolit (UTF-8), sivuston kuvaus, avainhakusanat selaimille, sivuston luojan tiedot ja viewport-asetukset eri laitteita varten  -->
+<meta name="description" content="Heikki Vesalan kotisivut">
+<meta name="keywords" content="Heikki Vesala,ICT,Jamk, tieto- ja viestintätekniikka">
+<meta name="author" content="Veli Heikki Vesala">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="tyylit/tyylit.css">	<!-- Linkki tyylitiedostoon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	<!-- lataa hampurilaisikonin font awesome kirjastosta -->
+
+<script src="https://kit.fontawesome.com/43a8d6fe1f.js" crossorigin="anonymous"></script>	<!-- Font Awesome skripti -->
+
+<script>	<!-- skripti, jolla vaihdellaan 'responsive'-luokkaa lisäämällä ja poistamalla se käyttäjän klikattaessa hampurilais-ikonia -->
+function myFunction() {	
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+} 
+</script>
+
+</head>
+
+<body>	
+
+<nav class="topnav" id="myTopnav">
+	<a href="index.html"><i class="fa-solid fa-house"></i>Etusivu</a>
+	<a href="tietoja_minusta_sivu.html"><i class="fa-solid fa-circle-user"></i>Tietoja minusta</a>
+	<a href="about_me_sivu.html"><i class="fa-solid fa-circle-user"></i>About me</a>
+	<a href="om_mig_sivu.html"><i class="fa-solid fa-circle-user"></i>Om mig</a>
+	<a href="#" class="split">Heikki Vesala: insinööriopiskelija</a>
+	
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars" style="color: white;"></i></a>	<!-- kutsutaan hampurilaisikonia klikatessa myFunction() funktiota -->
+</nav>
+
+ 
+<header>
+	<h1 class="teksti_baskerville" id="otsikko">Videomateriaali</h1>
+</header>
+
+<p class="sisalto_portfolio">Vianmääritys on oleellinen osa tietoverkkojen kanssa työskenneltäessä ja hyväksi vianmäärittäjäksi tulee vain tekemällä ja saamalla tarpeeksi 'kilometrejä' taakseen.
+Vianmääritystä jokainen voi tehdä omalla tyylillään, mutta mielestäni järjestelmällisyys, hyvä dokumentaatio ja aito uteliaisuus ongelmanratkaisuun auttaa merkittävästi.
+Aiheesta on hankala tehdä kaikenkattavia videoita, kun ongelmat ovat usein monikerroksisia ja tapauskohtaisia. 
+Olen kuitenkin luonut muutaman videon vianmäärityksestä oppimismielessä ja koska siitä ei voi koskaan olla olemassa liikaa materiaalia.</p>
+
+<h2 style="text-align: center; padding-top: 1em;">Kalvosulkeiset: tukiasemien vianmääritys</h2>
+
+<p class="sisalto_portfolio">Tukiasemamalleja on useita eri käyttötarkoituksiin, pääasiassa sisä-, ulko- sekä tehotukiasemia ja näiden ominaisuudet on hyvä tiedostaa vianmäärityksessä. Lisäksi on tukiasemia, jotka ei ole varsinaisesti tarkoitettu palvelemaan client-laitteita, vaan havainnoimaan esimerkiksi signaalihäiriönlähteitä verkossa.
+Vianmääritykseen vaikuttaa myös luonnollisesti verkkoympäristö, jossa työskennellään: jokaisella verkolla on omat ominaispiirteet. Lisäksi tukiasemilla voi olla laajakirjo erilaisia ongelmia, jotka vaikuttaa yhteyteen, suorituskykyyn ja käyttäjien kokemukseen. Näistä aiheista on tarkemmin kuvattu alla olevissa videoissa.</p>
+
+<h4 style="text-align: center;">Osa 1: tukiasemamallit ja verkkoympäristöt</h4>
+
+<div class="video-container">
+	
+    <video controls width="640" height="360">
+        <source src="videot/tukiasema_vianmääritys_osa1.mp4" type="video/mp4">
+    </video>
+</div>
+
+<h4 style="text-align: center;">Osa 2: yleiset viat</h4>
+
+<div class="video-container">
+	
+    <video controls width="640" height="360">
+        <source src="videot/tukiasema_vianmääritys_osa2.mp4" type="video/mp4">
+    </video>
+</div>
+
+
+<h2 style="text-align: center; padding-top: 1em;">Cisco Packet Tracer simulaatio: tukiaseman vianmääritys paikanpäällä</h2>
+
+<p class="sisalto_portfolio">Tukiasemien vianmääritystä voidaan tehdä fyysisesti paikanpäällä tai etätyökalujen avulla. Videolla on kuvattuna lyhyt skenaario siitä, millaisia yleisiä asioita voi tarkistaa tukiaseman vikaantuessa kaupan verkossa ja oltaessa fyysisesti paikanpäällä.</p>
+
+<div class="sisalto_portfolio"> 
+	<ol >
+		<li>Tarkistetaan, minkälainen LED-valo on tukiasemalla tai kytkinportissa, vai onko täysin pimeänä. Referoidaan tarvittaessa laitevalmistajan dokumentaatiota.</li>
+		<li>Tarkistetaan kaapelitesterillä Ethernet-kaapeli - onko liittimet kunnolla kiinni ja kaapeli vahingoittumaton.</li>
+		<li>Tarkistetaan yleismittarilla (multimeter) PoE-virran saanti.</li>
+		<li>Kokeillaan tukiasemaa toiseen porttiin.</li>
+		<li>Kokeillaan toimivaa varatukiasemaa.</li>
+		<li>Kiinnitetään läppäri samaan kytkinporttiin, jossa vikaantunut tukiasema on ollut ja varmistetaan L3-taso - pingataan oletusrettiä, saako laite IP-tiedot DHCP:n kautta jne.</li>
+		<li>Resetoidaan ja palautetaan tukiasema tehdasasetuksiin tai vaihdetaan uusi tukiasema.</li>
+	</ol>
+</div>
+
+
+<div class="video-container">
+	
+    <video controls width="640" height="360">
+        <source src="videot/simulaatio1.mp4" type="video/mp4">
+    </video>
+</div>
+
+<h2 style="text-align: center; padding-top: 1em;">Cisco Packet Tracer simulaatio: tukiaseman vianmääritys etäyhteydellä</h2>
+
+
+<p class="sisalto_portfolio">Tukiasemien vikoja voi määrittää myös etänä komentokehotteelta kirjautumalla esimerkiksi SSH-yhteydellä kytkimelle, jolla vikaantunut tukiasema on kiinni. Tutkittaessa tukiasemia etäyhteydellä voidaan kokeilla oheisia asioita halutussa järjestyksessä.</p>
+
+
+
+<div class="sisalto_portfolio"> 
+	<ol >
+		<li>Monimutkaisemmassa verkossa selvitetään, missä kytkimessä tukiasema on ollut kiinni esimerkiksi tukiaseman MAC-osoitteen avulla, lokeista tai pilvipalvelualustan kautta.</li>
+		<li>Otetaan SSH-yhteys kytkimelle, jossa tukiasema on kiinni.</li>
+		<li>Tarkistetaan, näkyykö tukiasemaa enää esimerkiksi CDP- tai LLDP-naapuruudella.</li>
+		<li>Tarkistetaan kytkimen lokit virheviestien varalta ja juurisyyn selvittämiseksi.</li>
+		<li>Tarkistetaan miltä fyysinen rajapinta vaikuttaa: duplex- ja speed-asetukset, CRC yms. virheet sekä L1-L2-taso.</li>
+		<li>Tarkistetaan, saako tukiasema PoE-virta riittävästi ja kytkimen PoE-budjetti. Tehdään tarvittaessa PoE-boot.</li>
+		<li>Varmistetaana kytkinportin VLAN asetukset ja että VLAN on määritelty kytkimelle.</li>
+		<li>Jos tukiasema tukee useaa SSID:tä, kytkimen ja AP:n välinen yhteys tulee olla trunk tilassa. Tarkista, että kytkimellä on konfiguroituna trunk-portti ja oikeat VLAN:t tägätty sekä native VLAN.</li>
+		<li>Monet tukiasemat saa IP-tiedot DHCP:n kautta, joten kannattaa tarkistaa, että VLAN:lla on toimiva DHCP-palvelin käytössä tai helper-osoite konfiguroituna.</li>
+		<li>Varmista, ettei ACL-lista, port security tai muut tietoturva-asetukset blokkaa yhteyttä.</li>
+		<li>Tarkista tarvittaessa RADIUS-autentikaatio hyödyntämällä tukiaseman MAC-osoitetta.</li>
+		<li>Varmista ping-testein yhteys kytkimeltä tukiasemaan.</li>
+		<li>Mikäli mikään ei auta, resetoi kytkinportti tai tukiasema, uudelleen konfiguroi ne tai vaihda tukiasema uuteen.</li>
+	</ol>
+</div>
+
+<h4 style="text-align: center;">Osa 1: CDP, PoE ja rajapinnat</h4>
+
+<div class="video-container">
+	
+    <video controls width="640" height="360">
+        <source src="videot/simulaatio2_osa1.mp4" type="video/mp4">
+    </video>
+</div>
+
+
+<h4 style="text-align: center;">Osa 2: VLAN, DHCP ja lokit</h4>
+
+<div class="video-container">
+	
+    <video controls width="640" height="360">
+        <source src="videot/simulaatio2_osa2.mp4" type="video/mp4">
+    </video>
+</div>
+
+<footer class="footer">
+	<ul>
+		<li><i class="fa-solid fa-envelope"></i>  AE9377@student.jamk.fi</li>
+		<li><i class="fa-brands fa-github" ></i>  HeikkiGithub</li>
+		<li><i class="fa-brands fa-linkedin"></i>  https://www.linkedin.com/in/heikki-vesala</li>
+	</ul>
+</footer>
+
+</body>
+
+</html>
