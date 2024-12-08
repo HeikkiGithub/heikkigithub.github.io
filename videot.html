@@ -55,7 +55,7 @@ Olen kuitenkin luonut muutaman videon vianmäärityksestä oppimismielessä ja k
 <h2 style="text-align: center; padding-top: 1em;">Kalvosulkeiset: tukiasemien vianmääritys</h2>
 
 <p class="sisalto_portfolio">Tukiasemamalleja on useita eri käyttötarkoituksiin, pääasiassa sisä-, ulko- sekä tehotukiasemia ja näiden ominaisuudet on hyvä tiedostaa vianmäärityksessä. Lisäksi on tukiasemia, jotka ei ole varsinaisesti tarkoitettu palvelemaan client-laitteita, vaan havainnoimaan esimerkiksi signaalihäiriönlähteitä verkossa.
-Vianmääritykseen vaikuttaa myös luonnollisesti verkkoympäristö, jossa työskennellään: jokaisella verkolla on omat ominaispiirteet. Lisäksi tukiasemilla voi olla laajakirjo erilaisia ongelmia, jotka vaikuttaa yhteyteen, suorituskykyyn ja käyttäjien kokemukseen. Näistä aiheista on tarkemmin kuvattu alla olevissa videoissa.</p>
+Vianmääritykseen vaikuttaa myös luonnollisesti verkkoympäristö, jossa työskennellään: jokaisella verkolla on omat ominaispiirteet. Lisäksi tukiasemilla voi olla laaja kirjo erilaisia ongelmia, jotka vaikuttaa yhteyteen, suorituskykyyn ja käyttäjien kokemukseen. Näistä lisää alla olevissa videoissa.</p>
 
 <h4 style="text-align: center;">Osa 1: tukiasemamallit ja verkkoympäristöt</h4>
 
@@ -78,17 +78,17 @@ Vianmääritykseen vaikuttaa myös luonnollisesti verkkoympäristö, jossa työs
 
 <h2 style="text-align: center; padding-top: 1em;">Cisco Packet Tracer simulaatio: tukiaseman vianmääritys paikanpäällä</h2>
 
-<p class="sisalto_portfolio">Tukiasemien vianmääritystä voidaan tehdä fyysisesti paikanpäällä tai etätyökalujen avulla. Videolla on kuvattuna lyhyt skenaario siitä, millaisia yleisiä asioita voi tarkistaa tukiaseman vikaantuessa kaupan verkossa ja oltaessa fyysisesti paikanpäällä.</p>
+<p class="sisalto_portfolio">Tukiasemien vianmääritystä voidaan tehdä fyysisesti paikanpäällä tai etätyökalujen avulla. Videolla on kuvattuna lyhyt skenaario siitä, millaisia yleisiä asioita voi tarkistaa tukiaseman vikaantuessa vaikkapa kaupan verkossa ja oltaessa fyysisesti paikanpäällä.</p>
 
 <div class="sisalto_portfolio"> 
 	<ol >
-		<li>Tarkistetaan, minkälainen LED-valo on tukiasemalla tai kytkinportissa, vai onko täysin pimeänä. Referoidaan tarvittaessa laitevalmistajan dokumentaatiota.</li>
+		<li>Tarkistetaan, minkälainen LED-valo palaa tukiasemalla tai kytkinportissa, vai onko ne täysin pimeänä. Referoidaan tarvittaessa laitevalmistajan dokumentaatiota.</li>
 		<li>Tarkistetaan kaapelitesterillä Ethernet-kaapeli - onko liittimet kunnolla kiinni ja kaapeli vahingoittumaton.</li>
 		<li>Tarkistetaan yleismittarilla (multimeter) PoE-virran saanti.</li>
-		<li>Kokeillaan tukiasemaa toiseen porttiin.</li>
+		<li>Kokeillaan tukiasemaa toiseen porttiin, jossa on vastaavat, tukiasemalle soveltuvat asetukset.</li>
 		<li>Kokeillaan toimivaa varatukiasemaa.</li>
-		<li>Kiinnitetään läppäri samaan kytkinporttiin, jossa vikaantunut tukiasema on ollut ja varmistetaan L3-taso - pingataan oletusrettiä, saako laite IP-tiedot DHCP:n kautta jne.</li>
-		<li>Resetoidaan ja palautetaan tukiasema tehdasasetuksiin tai vaihdetaan uusi tukiasema.</li>
+		<li>Kiinnitetään kannettava tietokone samaan kytkinporttiin, jossa vikaantunut tukiasema on ollut ja varmistetaan L3-taso - pingataan oletusrettiä, saako laite IP-tiedot DHCP:n kautta jne.</li>
+		<li>Resetoidaan ja palautetaan tukiasema tehdasasetuksiin tai vaihdetaan uusi tukiasema tilalle.</li>
 	</ol>
 </div>
 
@@ -103,25 +103,25 @@ Vianmääritykseen vaikuttaa myös luonnollisesti verkkoympäristö, jossa työs
 <h2 style="text-align: center; padding-top: 1em;">Cisco Packet Tracer simulaatio: tukiaseman vianmääritys etäyhteydellä</h2>
 
 
-<p class="sisalto_portfolio">Tukiasemien vikoja voi määrittää myös etänä komentokehotteelta kirjautumalla esimerkiksi SSH-yhteydellä kytkimelle, jolla vikaantunut tukiasema on kiinni. Tutkittaessa tukiasemia etäyhteydellä voidaan kokeilla oheisia asioita halutussa järjestyksessä.</p>
+<p class="sisalto_portfolio">Tukiasemien vikoja voi määrittää myös etänä, esimerkiksi komentokehotteen kautta kirjautumalla SSH-yhteydellä kytkimelle, jolla vikaantunut tukiasema on kiinni. Tutkittaessa tukiasemia etäyhteydellä voidaan kokeilla oheisia asioita halutussa järjestyksessä.</p>
 
 
 
 <div class="sisalto_portfolio"> 
 	<ol >
-		<li>Monimutkaisemmassa verkossa selvitetään, missä kytkimessä tukiasema on ollut kiinni esimerkiksi tukiaseman MAC-osoitteen avulla, lokeista tai pilvipalvelualustan kautta.</li>
+		<li>Monimutkaisemmissa verkoissa selvitetään, missä kytkimessä tukiasema on ollut kiinni esimerkiksi tukiaseman MAC-osoitteen avulla, lokeista tai pilvipalvelualustan kautta.</li>
 		<li>Otetaan SSH-yhteys kytkimelle, jossa tukiasema on kiinni.</li>
 		<li>Tarkistetaan, näkyykö tukiasemaa enää esimerkiksi CDP- tai LLDP-naapuruudella.</li>
-		<li>Tarkistetaan kytkimen lokit virheviestien varalta ja juurisyyn selvittämiseksi.</li>
+		<li>Tarkistetaan kytkimen lokit virheviestien varalta juurisyyn selvittämiseksi.</li>
 		<li>Tarkistetaan miltä fyysinen rajapinta vaikuttaa: duplex- ja speed-asetukset, CRC yms. virheet sekä L1-L2-taso.</li>
-		<li>Tarkistetaan, saako tukiasema PoE-virta riittävästi ja kytkimen PoE-budjetti. Tehdään tarvittaessa PoE-boot.</li>
-		<li>Varmistetaana kytkinportin VLAN asetukset ja että VLAN on määritelty kytkimelle.</li>
-		<li>Jos tukiasema tukee useaa SSID:tä, kytkimen ja AP:n välinen yhteys tulee olla trunk tilassa. Tarkista, että kytkimellä on konfiguroituna trunk-portti ja oikeat VLAN:t tägätty sekä native VLAN.</li>
-		<li>Monet tukiasemat saa IP-tiedot DHCP:n kautta, joten kannattaa tarkistaa, että VLAN:lla on toimiva DHCP-palvelin käytössä tai helper-osoite konfiguroituna.</li>
-		<li>Varmista, ettei ACL-lista, port security tai muut tietoturva-asetukset blokkaa yhteyttä.</li>
-		<li>Tarkista tarvittaessa RADIUS-autentikaatio hyödyntämällä tukiaseman MAC-osoitetta.</li>
-		<li>Varmista ping-testein yhteys kytkimeltä tukiasemaan.</li>
-		<li>Mikäli mikään ei auta, resetoi kytkinportti tai tukiasema, uudelleen konfiguroi ne tai vaihda tukiasema uuteen.</li>
+		<li>Tarkistetaan, saako tukiasema PoE-virtaa riittävästi ja kytkimen PoE-budjetti. Tehdään tarvittaessa PoE-boot.</li>
+		<li>Varmistetaan kytkinportin VLAN-asetukset ja että VLAN:t on määritelty kytkimelle.</li>
+		<li>Jos tukiasema tukee useaa SSID:tä ja niille on osoitettu omat VLAN:t, kytkimen ja tukiaseman välinen yhteys tulee olla trunk tilassa. Tarkistetaan, että kytkimellä on konfiguroituna trunk-portti ja oikeat VLAN:t tägätty sekä native VLAN.</li>
+		<li>Monet tukiasemat saa IP-tiedot DHCP:n kautta, joten kannattaa tarkistaa, että VLAN:lla on toimiva DHCP-palvelin käytössä tai ip helper-address -osoite konfiguroituna.</li>
+		<li>Varmistetaan, ettei ACL-lista, port security tai muut tietoturva-asetukset blokkaa yhteyttä.</li>
+		<li>Tarkistetaan tarvittaessa RADIUS-autentikaation toiminta hyödyntämällä tukiaseman MAC-osoitetta.</li>
+		<li>Varmistetaan ping-testein yhteys kytkimeltä tukiasemaan ja että tukiaseman MAC-osoite näkyy CDP/LLDP naapuruudessa.</li>
+		<li>Mikäli mikään muu ei auta, resetoidaan kytkinportti tai tukiasema, uudelleen konfiguroidaan ne tai vaihdetaan tukiasema uuteen.</li>
 	</ol>
 </div>
 
